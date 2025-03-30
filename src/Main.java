@@ -6,7 +6,7 @@ public class Main {
         }
 
         System.out.println("Задача №2");
-        for (int i = 10; i >= 0; i--) {
+        for (int i = 10; i > 0; i--) {
             System.out.println(i);
         }
 
@@ -26,7 +26,7 @@ public class Main {
         }
 
         System.out.println("Задача №6");
-        for (int i = 0; i <= 98; i += 7) {
+        for (int i = 7; i <= 98; i += 7) {
             System.out.println(i);
         }
 
@@ -44,8 +44,10 @@ public class Main {
 
         System.out.println("Задача №9");
         int money1 = 29000;
+        int saving = 0;
         for (int month = 1; month <= 12; month++) {
-            int saving = ((money1 + (money1 / 100)) * month);
+            saving = saving + money1;
+            saving = saving + saving / 100;
             System.out.println("Месяц " + month + " сумма накоплений равна " + saving + " рублей.");
         }
 
